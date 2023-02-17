@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Description: Size of
  *
  * Return: On success 0
  */
-int main(void)
+void print_alphabet(void)
 {
 char i;
 for (i = 'a'; i <= 'z'; i++)
@@ -14,5 +14,4 @@ for (i = 'a'; i <= 'z'; i++)
 _putchar(i);
 }
 _putchar('\n');
-return (0);
 }

@@ -11,7 +11,7 @@
 int main(void)
 {
 char i;
-print_alphabet()
+ print_alphabet();
 {
 for (i = 'a'; i <= 'z'; i++)
 _putchar(i);

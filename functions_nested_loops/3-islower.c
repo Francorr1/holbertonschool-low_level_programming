@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * _islower - Entry point
- *
- *
+ * @c: char
  * Description: Size of
  *
  * Return: On success 0

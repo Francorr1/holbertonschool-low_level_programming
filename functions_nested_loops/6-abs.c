@@ -15,7 +15,7 @@ int _abs(int n)
 	{
 		i = n;
 	}
-	if (n < '0')
+	if (n < 0)
 	{
 		i = n * -1;
 	}

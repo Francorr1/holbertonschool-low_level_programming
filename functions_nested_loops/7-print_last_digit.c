@@ -6,7 +6,7 @@
  *
  * Return: On success 0
  */
-int print_last_digit(int n)
+int print_last_digit(char n)
 {
 	int i;
 

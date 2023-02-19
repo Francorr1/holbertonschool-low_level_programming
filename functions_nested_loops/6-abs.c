@@ -9,25 +9,15 @@
 int _abs(int n)
 {
 	int i;
-	int l;
 
-	l = '0';
 	i = '0';
 	if (n > '0')
 	{
-		while (i < n)
-		{
-			i++;
-			l++;
-		}
+		i = n;
 	}
 	if (n < '0')
 	{
-		while (i > n)
-		{
-			i--;
-			l++;
-		}
+		i = n * '-1';
 	}
-	return (l);
+	return (i);
 }

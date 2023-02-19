@@ -15,7 +15,7 @@ int _abs(int n)
 	i = '0';
 	if (n > '0')
 	{
-		while (i != n)
+		while (i < n)
 		{
 			i++;
 			l++;
@@ -23,7 +23,7 @@ int _abs(int n)
 	}
 	if (n < '0')
 	{
-		while (i != n)
+		while (i > n)
 		{
 			i--;
 			l++;

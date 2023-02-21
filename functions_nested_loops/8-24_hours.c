@@ -17,9 +17,9 @@ void jack_bauer(void)
 	h2 = '0';
 	m1 = '0';
 	m2 = '0';
-	while (h1 != '2' && h2 != '4')
+	do
 	{
-		while (m1 != '6' && m2 != '0')
+		do
 		{
 			_putchar(h1);
 			_putchar(h2);
@@ -34,6 +34,7 @@ void jack_bauer(void)
 				m1++;
 			}
 		}
+		while (m1 != '6' && m2 != '0');
 		m1 = '0';
 		m2 = '0';
 		h2++;
@@ -43,5 +44,6 @@ void jack_bauer(void)
 			h1++;
 		}
 	}
+	while (h1 != '2' && h2 != '4');
 	
 }

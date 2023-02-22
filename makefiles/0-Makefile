@@ -1,2 +1,2 @@
-all : school
-	gcc main.c m.h a.out README.md school.c -o school
+all : main.c m.h school.c
+	gcc main.c m.h school.c -o school

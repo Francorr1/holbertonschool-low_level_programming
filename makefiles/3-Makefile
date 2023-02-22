@@ -7,13 +7,13 @@ all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean : $(NAME)
-	$(RM) -r $(wildcard *~) $(NAME)
+	$(RM) -f $(wildcard *~) $(NAME)
 
 oclean : $(OBJ)
-	$(RM) -r $(OBJ)
+	$(RM) -f $(OBJ)
 
 fclean : $(RM) $(NAME) $(OBJ)
-	$(RM) -r $(wildcard *~) $(NAME) $(OBJ)
+	$(RM) -f $(wildcard *~) $(NAME) $(OBJ)
 
 re : $(SRC) $(OBJ)
 	$(CC) $(SRC) $(OBJ) -o $(NAME)

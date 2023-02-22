@@ -16,4 +16,4 @@ oclean :
 fclean :
 	$(RM) -f $(wildcard *~) $(NAME) $(OBJ)
 re :
-	$(CC) $(SRC) -o $(NAME)
+	$(CC) $(SRC) $(OBJ) -o $(NAME)

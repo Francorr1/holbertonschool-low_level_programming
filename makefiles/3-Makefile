@@ -3,9 +3,10 @@ SRC = school.c main.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm
+.PHONY : clean
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-.PHONY : clean
+clean :
 	$(RM) -f $(wildcard *~) $(NAME)
 oclean : $(RM) -f $(OBJ)
 fclean : $(RM) -f $(wildcard *~) $(NAME) $(OBJ)

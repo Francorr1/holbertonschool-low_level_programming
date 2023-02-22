@@ -6,14 +6,14 @@ RM = rm
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-clean : $(NAME)
-	$(RM) $(wildcard *~) $(NAME)
+ilean : $(NAME)
+	$(RM) -r $(wildcard *~) $(NAME)
 
 oclean : $(OBJ)
-	$(RM) $(OBJ)
+	$(RM) -r $(OBJ)
 
 fclean : $(RM) $(NAME) $(OBJ)
-	$(RM) $(wildcard *~) $(NAME) $(OBJ)
+	$(RM) -r $(wildcard *~) $(NAME) $(OBJ)
 
 re : $(SRC) $(OBJ)
 	$(CC) $(SRC) $(OBJ) -o $(NAME)

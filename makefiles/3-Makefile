@@ -4,11 +4,16 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm
 .PHONY : clean
+.PHONY : oclean
+.PHONY : fclean
+.PHONY : re
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean :
 	$(RM) -f $(wildcard *~) $(NAME)
-oclean : $(RM) -f $(OBJ)
-fclean : $(RM) -f $(wildcard *~) $(NAME) $(OBJ)
-re : $(SRC)
+oclean :
+	$(RM) -f $(OBJ)
+fclean :
+	$(RM) -f $(wildcard *~) $(NAME) $(OBJ)
+re :
 	$(CC) $(SRC) -o $(NAME)

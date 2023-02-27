@@ -5,9 +5,12 @@
  */
 void _puts(char *str)
 {
+	char es;
+
 	while (*str != '\0')
 	{
-		_putchar(str);
+		es = str;
+		_putchar(es);
 		str++;
 	}
 }

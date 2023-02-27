@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * rev_string - Main function
  * @s: address of s
@@ -7,7 +8,7 @@ void rev_string(char *s)
 {
 	int i;
 	int j;
-	char nst[*s];
+	char nexstr[100];
 
 	j = 0;
 	for (i = 0; s[i]; i++)
@@ -17,8 +18,9 @@ void rev_string(char *s)
 	i -= 1;
 	for (; s[i]; i--)
 	{
-		nst[j] = s[i];
+		nexstr[j] = s[i];
 		j++;
 	}
-	*s = j;
+	for (i = 0; s[i]; i++)
+		s[i] = nexstr[i];
 }

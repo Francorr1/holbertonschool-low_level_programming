@@ -5,7 +5,9 @@
  */
 void puts2(char *str)
 {
-	while (*str)
+	for (i = 0; str[i]; i++)
+		continue;
+	while (*str != '\0')
 	{
 		_putchar(*str);
 		str += 2;

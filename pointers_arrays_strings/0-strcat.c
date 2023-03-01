@@ -1,7 +1,10 @@
 #include "main.h"
 /**
+ * _strcat - Main function
+ * @dest: Address of dest
+ * @src: Address of src
  *
- *
+ * Return: Returns the address of dest
  */
 char *_strcat(char *dest, char *src)
 {

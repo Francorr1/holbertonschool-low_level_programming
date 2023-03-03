@@ -11,20 +11,27 @@ char *cap_string(char *s)
 	int n;
 
 	i = 0;
-	for (; s[i]; i++)
+	for (; s[i] != '\0'; i++)
 	{
-		n = 0;
-		for (; cap[n]; n++)
+		if (s[i + 1] >= 97 && s[i + 1] <= 122)
 		{
-			if (s[i] == cap[n])
+			n = 0;
+			for (; cap[n]; n++)
 			{
-				i++;
-				s[i] -= 32;
+					if (s[i] == cap[n])
+					{
+						i++;
+						s[i] = s[i] - 32;
+					}
+					else
+					{
+						continue;
+					}
 			}
-			else
-			{
-				continue;
-			}
+		}
+		else
+		{
+			continue;
 		}
 	}
 	return (s);

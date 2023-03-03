@@ -1,8 +1,9 @@
 #include "main.h"
 /**
+ * cap_string - Main Function
+ * @s: Address of s
  *
- *
- *
+ * Return: The result
  */
 char *cap_string(char *s)
 {
@@ -18,15 +19,15 @@ char *cap_string(char *s)
 			n = 0;
 			for (; cap[n]; n++)
 			{
-					if (s[i] == cap[n])
-					{
-						i++;
-						s[i] = s[i] - 32;
-					}
-					else
-					{
-						continue;
-					}
+				if (s[i] == cap[n])
+				{
+					i++;
+					s[i] = s[i] - 32;
+				}
+				else
+				{
+					continue;
+				}
 			}
 		}
 		else

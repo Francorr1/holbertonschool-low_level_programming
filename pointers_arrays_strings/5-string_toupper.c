@@ -5,8 +5,6 @@
  *
  * Return: res
  */
-char res[1000];
-
 char *string_toupper(char *s)
 {
 	int i;
@@ -15,7 +13,7 @@ char *string_toupper(char *s)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			res[i] = s[i] - 32;
+			s[i] = s[i] - 32;
 		}
 		else
 			continue;

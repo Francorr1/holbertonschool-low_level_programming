@@ -5,7 +5,7 @@
  *
  * Return: res
  */
-char *res[1000];
+char res[1000];
 
 char *string_toupper(char *s)
 {

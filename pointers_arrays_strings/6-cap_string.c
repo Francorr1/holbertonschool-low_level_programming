@@ -10,9 +10,11 @@ char *cap_string(char *s)
 	int i;
 	int n;
 
-	for (i = 0; s[i]; i++)
+	i = 0;
+	for (; s[i]; i++)
 	{
-		for (n = 0; cap[n]; n++)
+		n = 0;
+		for (; cap[n]; n++)
 		{
 			if (s[i] == cap[n])
 			{

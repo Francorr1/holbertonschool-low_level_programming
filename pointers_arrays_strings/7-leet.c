@@ -16,8 +16,6 @@ char *leet(char *s)
 		{
 			if (s[i] == og[n])
 				s[i] = rep[n];
-			else
-				continue;
 		}
 	}
 	return (s);

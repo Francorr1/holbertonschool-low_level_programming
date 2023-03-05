@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strchr - Main Function
+ * _strpbrk - Main Function
  * @s: Address of s
- * @c: a char
+ * @accept: Address of Accept
  *
  * Return: I dont even know anymore
  */
@@ -16,7 +16,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*s == accept[i])
 			{
-				return(s);
+				return (s);
 			}
 		}
 		s++;

@@ -9,7 +9,7 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	char ret = '\0';
+	char *ret = '\0';
 
 	for (i = 0; s[i]; i++)
 	{
@@ -19,5 +19,5 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	return (ret);
+	return (*ret);
 }

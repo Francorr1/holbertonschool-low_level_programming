@@ -1,7 +1,10 @@
 #include "main.h"
 /**
+ * _strspn - Main function
+ * @s: Address of s
+ * @accept: Address of accept
  *
- *
+ * Return: C
  */
 unsigned int _strspn(char *s, char *accept)
 {

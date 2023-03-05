@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * _strchr - Main function
  * @s: Address of s
@@ -9,7 +9,7 @@ nclude "main.h"
 char *_strchr(char *s, char c)
 {
 	int i;
-	char ret = '/0';
+	char ret = '\0';
 
 	for (i = 0; s[i]; i++)
 	{

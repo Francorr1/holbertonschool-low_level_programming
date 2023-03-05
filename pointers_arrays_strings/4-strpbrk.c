@@ -1,24 +1,24 @@
 #include "main.h"
 /**
+ * _strchr - Main Function
+ * @s: Address of s
+ * @c: a char
  *
- *
+ * Return: I dont even know anymore
  */
-char *_strpbrk(char *s, char *accept)
+char *_strchr(char *s, char c)
 {
-        int i;
-        char *ret;
+	int i;
 
-        for (i = 0; s[i]; i++)
-        {
-                if (s[i] == accept)
+	while (*s)
+	{
+		for (i = 0; accept[i]; i++)
 		{
-                        ret = &s[i];
-                        break;
-                }
-                else
-                {
-                        ret = '\0';
-                }
-        }
-        return (ret);
+			if (s == accept[i])
+			{
+				return(s);
+			}
+		}
+		return ('\0');
+	}
 }

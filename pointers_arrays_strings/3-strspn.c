@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 	int c;
 
 	c = 0;
-	for(i = 0; s[i]; i++)
+	for (i = 0; s[i]; i++)
 	{
 		if (s[i] != 32)
 		{
@@ -30,5 +30,5 @@ unsigned int _strspn(char *s, char *accept)
 			return (c);
 		}
 	}
-	return(c);
+	return (c);
 }

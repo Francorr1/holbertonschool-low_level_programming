@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * jack_bauer - Entry point
- * 
+ *
  * Description: Size of
  *
  * Return: On success 0

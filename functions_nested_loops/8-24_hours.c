@@ -11,9 +11,9 @@ void jack_bauer(void)
 	int h;
 	int min;
 
-	while (h < 24)
+	for (h = 0; h < 24; h++)
 	{
-		while (min < 60)
+		for (min = 0; min < 60; min++)
 		{
 			_putchar('0' + (h / 10));
 			_putchar('0' + (h % 10));
@@ -21,9 +21,6 @@ void jack_bauer(void)
 			_putchar('0' + (min / 10));
 			_putchar('0' + (min % 10));
 			_putchar('\n');
-			min++;
 		}
-		min = 0;
-		h++;
 	}
 }

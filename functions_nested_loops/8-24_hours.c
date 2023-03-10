@@ -28,13 +28,13 @@ void jack_bauer(void)
 			_putchar(m2);
 			_putchar('\n');
 			m2++;
-			if (m2 == '9')
+			if (m2 >= '9')
 			{
 				m2 = '0';
 				m1++;
 			}
 		}
-		while (m1 != '6' && m2 != '0');
+		while (m1 <= '6' && m2 <= '0');
 		m1 = '0';
 		m2 = '0';
 		h2++;
@@ -44,6 +44,6 @@ void jack_bauer(void)
 			h1++;
 		}
 	}
-	while (h1 != '2' && h2 != '4');
+	while (h1 <= '2' && h2 <= '4');
 	
 }

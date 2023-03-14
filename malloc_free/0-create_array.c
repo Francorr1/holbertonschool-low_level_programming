@@ -10,7 +10,6 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ma;
-	int i;
 
 	if (size == 0)
 	{
@@ -21,5 +20,5 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	return (c);
+	return (*c);
 }

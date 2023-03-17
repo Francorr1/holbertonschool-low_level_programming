@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int ret;
 	int i;
 	long val;
-	char *next[100];
+	char **next[100];
 	int res = 0;
 
 	if (argc == 1)
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < argc; i++)
 		{
-			val = strtol(argv[i], &next, 10);
+			val = strtol(argv[i], **next, 10);
 			if ((*next == argv[i]) || (next != '\0'))
 			{
 				printf("Error");

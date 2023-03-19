@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 	for (; i < max; i++)
 	{
 		p[j] = i;
-		j++
+		j++;
 	}
 	return (p);
 }

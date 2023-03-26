@@ -2,6 +2,11 @@
 #define protektor
 #include <stdlib.h>
 #include <stdio.h>
+/**
+ * struct op - Structure of an operation
+ * @op: The parameter of the operation
+ * @f: The function of the operation
+ */
 typedef struct op
 {
 	char *op;

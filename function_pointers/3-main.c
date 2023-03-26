@@ -1,6 +1,10 @@
 #include "3-calc.h"
 /**
+ * main - Entry point
+ * @argc: Argument counter
+ * @argv: Argument vector
  *
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {

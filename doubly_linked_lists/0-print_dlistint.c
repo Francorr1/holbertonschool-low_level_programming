@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_dlistint - Prints a double linked list and returns the amount of nodes printed
+ * print_dlistint - Prints a double linked list
  * @h: The list to be printed and counted
  *
  * Return: The amount of nodes printed

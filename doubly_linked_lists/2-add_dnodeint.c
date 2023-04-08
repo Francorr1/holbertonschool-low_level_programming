@@ -10,7 +10,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
 
-	if (n == NULL)
+	if (head == NULL || n == '\0')
 	{
 		return (NULL);
 	}

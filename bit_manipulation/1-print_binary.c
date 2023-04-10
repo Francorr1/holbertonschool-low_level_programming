@@ -5,17 +5,20 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int *bin = 0;
+	unsigned long int bin = 0;
 	int i = 0;
 
 	while (n != 0)
 	{
-		bin[i] = n & 1;
+		bin = n & 1;
 		n = n >> 1;
-		i++;
-	}
-	for (i = 0; bin[i]; i++)
-	{
-		_putchar(bin[i] + '0');
+		if (bin == 1)
+		{
+			_putchar('1');
+		}
+		if (bin == '0')
+		{
+			_putchar('0')
+		}
 	}
 }

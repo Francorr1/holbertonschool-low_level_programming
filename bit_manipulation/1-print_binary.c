@@ -11,6 +11,6 @@ void print_binary(unsigned long int n)
 	{
 		bin = n & 1;
 		n = n >> 1;
-		_putchar(bin);
+		_putchar(bin + '0');
 	}
 }

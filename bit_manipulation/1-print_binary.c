@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 		n = n >> 1;
 		i++;
 	}
-	for (i = 0; bin[i], i++)
+	for (i = 0; bin[i]; i++)
 	{
 		_putchar(bin[i] + '0');
 	}

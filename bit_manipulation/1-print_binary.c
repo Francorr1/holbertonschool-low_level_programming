@@ -5,8 +5,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int bin = 0;
-	int i = 0;
+	unsigned long int bin = 2;
 
 	while (n != 0)
 	{
@@ -14,8 +13,8 @@ void print_binary(unsigned long int n)
 		n = n >> 1;
 		bin = bin << 1;
 	}
-	for (; bin[i], i++)
+	for (; bin == 2; bin >> 1)
 	{
-		_putchar(bin[i]);
+		_putchar(bin);
 	}
 }

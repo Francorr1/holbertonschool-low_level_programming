@@ -6,7 +6,6 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int bin = 0;
-	int i = 0;
 
 	while (n != 0)
 	{

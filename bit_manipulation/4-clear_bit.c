@@ -2,7 +2,7 @@
 /**
  * clear_bit - Takes the bit in the position INDEX and makes it a 0
  * @n: Where to change the bit
- * @index The bit to change
+ * @index: The bit to change
  *
  * Return: 1 on success, -1 on failure
  */

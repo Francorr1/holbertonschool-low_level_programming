@@ -9,13 +9,8 @@ void print_binary(unsigned long int n)
 
 	while (n != 0)
 	{
+		_putchar(bin + '0');
 		bin = n & 1;
 		n = n >> 1;
-		bin = bin << 1;
-	}
-	while (bin)
-	{
-		_putchar(bin + '0');
-		bin = bin >> 1;
 	}
 }

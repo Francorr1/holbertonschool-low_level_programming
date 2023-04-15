@@ -32,5 +32,5 @@ int create_file(const char *filename, char *text_content)
 	write(desc, buff, i);
 	close(desc);
 	free(buff);
-	return(i);
+	return(1);
 }

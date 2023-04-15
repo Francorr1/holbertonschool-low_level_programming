@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	desc = open(filename, 0_RDONLY);
+	desc = open(filename, O_RDONLY);
 	if (desc == -1)
 	{
 		free(buff);

@@ -1,6 +1,10 @@
 #include "main.h"
 /**
+ * create_file - Creates a file and writes the contents of text_content
+ * @filename: The name to give the new file
+ * @text_content: The content to write to the new file
  *
+ * Return: 1 on success, -1 on failure
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -32,5 +36,5 @@ int create_file(const char *filename, char *text_content)
 	write(desc, buff, i);
 	close(desc);
 	free(buff);
-	return(1);
+	return (1);
 }

@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * sum_slistint - Sums all the n values of a linked list
+ * sum_dlistint - Sums all the n values of a linked list
  * @head: Said linked list
  *
  * Return: The rsult of the sum

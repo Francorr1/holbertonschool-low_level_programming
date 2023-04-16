@@ -18,13 +18,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		continue;
 	for (len2 = 0; s2[len2]; len2++)
 		continue;
-	if (len2 <= n)
+	if (n >= len2)
 		n = len2;
 	p = malloc(sizeof(char) * (len1 + n));
 	if (p == NULL)
 		return (NULL);
 	for (i = 0; i < len1; i++)
-		p[1] = s1[i];
+		p[i] = s1[i];
 	for (j = 0; j <= n; j++)
 	{
 		p[i] = s2[j];

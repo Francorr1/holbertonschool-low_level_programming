@@ -4,7 +4,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int origin, dest, conto, contd, close;
+	int origin, dest, conto, contd, closeo;
 	char *buff[1024];
 
 	if (argc != 2)
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	origin = open(argv[1], O_RDONLY);
 	if ((conto = read(origin, buff, sizeof(buff))) != 0)
 	{
-		contd = write(des, buff, conto);
+		contd = write(dest, buff, conto);
 	}
 	if (origin == -1 || conto == -1)
 	{
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	close = close(origin);
+	closeo = close(origin);
 	if (close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", origin);

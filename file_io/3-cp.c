@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 	int origin, dest, conto, contd, closeo;
 	char *buff[1024];
 
-	if (argc != 2)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);

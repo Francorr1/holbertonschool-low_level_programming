@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	closeo = close(origin);
-	if (close == -1)
+	if (closeo == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", origin);
 		exit(100);

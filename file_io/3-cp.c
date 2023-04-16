@@ -1,6 +1,10 @@
 #include "main.h"
 /**
+ * main - Copies the contents of a file to another file
+ * @argc: Argument counter
+ * @argv: Argument vector
  *
+ * Return: 0 on success
  */
 int main(int argc, char *argv[])
 {
@@ -14,7 +18,8 @@ int main(int argc, char *argv[])
 	}
 	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	origin = open(argv[1], O_RDONLY);
-	if ((conto = read(origin, buff, sizeof(buff))) != 0)
+	conto = read(origin, buff, sizeof(buff));
+	if (conto != 0)
 	{
 		contd = write(dest, buff, conto);
 	}
@@ -31,8 +36,8 @@ int main(int argc, char *argv[])
 	closeo = close(origin);
 	if (closeo == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", origin);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", origin);
 		exit(100);
 	}
-	return(0);
+	return (0);
 }
